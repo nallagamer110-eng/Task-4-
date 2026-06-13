@@ -1,0 +1,77 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Step 3: Use ViewPort units */
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Step 3: CSS for the image section with equal spacing */
+/* 25% from left and right, 10% from top and bottom */
+.image-section {
+  width: 50vw;
+  margin: 10vh auto;
+  padding: 2vh;
+  
+  /* Box Sizing properly applied */
+  box-sizing: border-box;
+  
+  /* Center content without flex */
+  text-align: center;
+}
+
+/* Style the image */
+.image-section img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto 2vh auto;
+  display: block;
+}
+
+/* Step 3: Customise button appearance with gradient background and font settings */
+.custom-button {
+  /* Gradient background */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* Font settings */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  
+  /* Button spacing and sizing */
+  padding: 12px 36px;
+  border: none;
+  border-radius: 8px;
+  
+  /* Box Sizing */
+  box-sizing: border-box;
+  
+  /* Cursor effect */
+  cursor: pointer;
+  
+  /* Transition for smooth effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  /* Display inline-block for proper sizing */
+  display: inline-block;
+}
+
+/* Button hover effect */
+.custom-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Button active/click effect */
+.custom-button:active {
+  transform: scale(0.98);
+}
