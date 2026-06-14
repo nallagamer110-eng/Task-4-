@@ -1,50 +1,39 @@
 # Image Display Page
 
-A simple HTML and CSS project demonstrating viewport units, proper spacing, and custom button styling without using Flex, overflow:hidden, or position relative/absolute.
+A simple web page that displays an image with a styled button, using responsive viewport units and proper spacing.
 
-## Files Included
+## What's in this project?
 
-- `index.html` - The main HTML file with image display div and button
-- `style.css` - The CSS file containing all styling rules
-- `README.md` - This documentation file
-- `image.jpg` - Replace with your actual image file
+- `index.html` - The HTML page with an image and button
+- `style.css` - All the styling code
+- `README.md` - This file
 
-## Project Steps Overview
+## What does it look like?
 
-### 1. HTML Setup ✅
-- Defined document structure with necessary HTML tags (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)
-- Set document title: "Image Display Page"
-- Linked external stylesheet (`style.css`) using `<link>` tag
+The page shows:
+- An image centered on the screen with nice spacing (25% from left/right, 10% from top/bottom)
+- A pretty button with a purple gradient background below the image
+- The button has a smooth hover effect that makes it slightly larger
 
-### 2. Body Content ✅
-- Created a `<div>` with class `"image-section"` for image display
-- Inserted an `<img>` tag within the div
-- Added a `<button>` with class `"custom-button"` for user interaction
+## How was it built?
 
-### 3. CSS Styling ✅
-- **Equal spacing**: 25% from left and right (50vw width with auto margin)
-- **Top/bottom spacing**: 10% from top and bottom (10vh margin)
-- **Button customization**: Gradient background (`linear-gradient(135deg, #667eea 0%, #764ba2 100%)`), custom font settings
-- **Box Sizing**: `box-sizing: border-box` applied globally and on elements
-- **No scroll**: Page layout designed to fit viewport without scrolling
-- **Viewport units**: Used `vw` (viewport width) and `vh` (viewport height) throughout
+### HTML
+Simple and clean - just a div containing an image and a button.
 
-### 4. Final Steps ✅
-- All HTML tags properly closed
-- ❌ No Flex used
-- ❌ No `overflow: hidden` used
-- ❌ No `position: relative` or `position: absolute` used
+### CSS
+- Uses **viewport units** (vw, vh) so it looks good on any screen size
+- **25% spacing** from the left and right edges
+- **10% spacing** from the top and bottom edges
+- No Flexbox, no overflow hiding, no absolute positioning - just clean, natural CSS
 
-## CSS Techniques Used
+## Fun details
 
-| Technique | Implementation | Purpose |
-|-----------|---------------|---------|
-| Viewport Units | `50vw`, `10vh`, `18px` | Responsive sizing based on screen |
-| Box Sizing | `box-sizing: border-box` | Consistent padding/border calculation |
-| Gradient Background | `linear-gradient(135deg, #667eea, #764ba2)` | Modern button appearance |
-| Text Alignment | `text-align: center` | Center content without Flex |
-| Transitions | `transition: transform 0.2s` | Smooth hover effects |
+- The button grows slightly when you hover over it
+- It gets a subtle shadow on hover
+- When you click it, it shrinks a bit for a nice click effect
 
-## How to Run
+## Built by
 
-1. Save all files in the same folder:
+Adyansh Patnaik  
+Bhubaneswar, Odisha  
+June 2026
